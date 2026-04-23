@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+ <meta name="description" content="Saboreie os milkshakes mais cremosos e gelados da região! Diversos sabores, do clássico chocolate às criações especiais. Venha experimentar uma explosão de doçura e frescor">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Milkshakes Cremosos e Especiais | Gagos Shake">
+  <meta property="og:description" content="Saboreie os milkshakes mais cremosos e gelados da região! Diversos sabores, do clássico chocolate às criações especiais. Venha experimentar uma explosão de doçura e frescor.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/img/capa.png"><!--Img que aparecerá no link-->
+  <meta property="og:url" content="https://gittmau.github.io/gagoshake/"><!--link do site-->
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Milkshakes Cremosos e Especiais | Gagos Shake">
+  <meta name="twitter:description" content="Saboreie os milkshakes mais cremosos e gelados da região! Diversos sabores, do clássico chocolate às criações especiais. Venha experimentar uma explosão de doçura e frescor">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/img/capa.png"><!--img que aparecerá no twitter-->
+  <meta name="author" content="Mauricio F. Honorato dos Santos">
+    <title>Milkshakes Cremosos e Especiais | Gagos Shake</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;0,800;0,900;1,900&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<link rel="icon" href="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/img/logo.png">
+
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#7e7700",
+                    "on-tertiary-fixed": "#1e1c00",
+                    "inverse-surface": "#313030",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-surface-variant": "#444748",
+                    "surface-container-high": "#eae7e7",
+                    "surface": "#fcf9f8",
+                    "on-primary-container": "#737575",
+                    "primary": "#5d5f5f",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#c6c6c7",
+                    "outline-variant": "#c4c7c8",
+                    "surface-variant": "#e5e2e1",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#dcd9d9",
+                    "on-background": "#1c1b1b",
+                    "primary-fixed": "#e2e2e2",
+                    "secondary-fixed-dim": "#ffafd6",
+                    "surface-container": "#f0eded",
+                    "primary-container": "#fdfdfd",
+                    "error": "#ba1a1a",
+                    "secondary": "#b4007e",
+                    "surface-tint": "#5d5f5f",
+                    "secondary-container": "#fd51ba",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1c1b1b",
+                    "on-secondary-fixed-variant": "#8a0060",
+                    "primary-fixed-dim": "#c6c6c7",
+                    "tertiary-fixed-dim": "#d5ca1c",
+                    "on-primary-fixed": "#1a1c1c",
+                    "on-secondary-container": "#5e0040",
+                    "outline": "#747878",
+                    "on-secondary-fixed": "#3c0028",
+                    "on-tertiary-fixed-variant": "#4d4800",
+                    "tertiary-fixed": "#f2e73d",
+                    "surface-container-low": "#f6f3f2",
+                    "tertiary-container": "#fffcff",
+                    "tertiary": "#666000",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#454747",
+                    "secondary-fixed": "#ffd8e8",
+                    "background": "#fcf9f8",
+                    "surface-bright": "#fcf9f8",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "80px",
+                    "md": "24px",
+                    "sm": "12px",
+                    "gutter": "24px",
+                    "lg": "48px",
+                    "base": "8px",
+                    "xs": "4px",
+                    "margin": "32px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-bold": ["Plus Jakarta Sans"],
+                    "display-lg": ["Be Vietnam Pro"],
+                    "headline-lg": ["Be Vietnam Pro"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["Be Vietnam Pro"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "500"}],
+                    "label-bold": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+
+        html{scroll-behavior:smooth}
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .blob-bg {
+            filter: blur(40px);
+            z-index: -1;
+        }
+        .hero-milkshake-shadow {
+            filter: drop-shadow(0 20px 30px rgba(180, 0, 126, 0.25));
+        }
+				
+				.material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .shake-pop-shadow {
+            box-shadow: 0 10px 40px rgba(233, 64, 169, 0.15);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+				
+				#logo{width:80px}
+				
+				@media(max-width:768px){
+				  h1,h2,h3{
+					font-size:!important;
+					
+					}
+				}
+				
+				
+				@media(min-width:768px){
+				 
+				 #neta{max-width:;margin:auto;
+				 }
+				 
+				 #taxa,#estacao{display:none}
+				}
+				
+				@media(min-width:1280px){
+				
+				 #taxa,#estacao{display:flex}
+				 
+				 #sabores{padding-top:50px}
+				
+				}
+				
+				
+    </style>
+</head>
+<div id="conteudoTodo">
+<body class="bg-surface text-on-surface selection:bg-secondary/30">
+<!-- TopNavBar -->
+<header class="bg-[#FDFDFD] dark:bg-slate-900 rounded-full mt-4 mx-4 md:mx-auto max-w-7xl sticky top-4 z-50 shadow-xl shadow-pink-100/50 dark:shadow-none flex justify-between items-center px-8 py-3 w-full bg-white/80 backdrop-blur-md">
+<div class="text-3xl font-black text-pink-600 dark:text-pink-400 italic font-['Be_Vietnam_Pro'] tracking-tighter">
+            <!--Gago's shake--->
+						<img src="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/img/logo.png" id="logo">
+        </div>  
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-pink-600 dark:text-pink-400 border-b-4 border-yellow-400 pb-1 font-['Be_Vietnam_Pro'] font-black uppercase tracking-tighter hover:scale-110 hover:text-blue-400 transition-all duration-300" href="#sabores">Sabores</a>
+<a class="text-pink-400 dark:text-pink-300 font-bold font-['Be_Vietnam_Pro'] font-black uppercase tracking-tighter hover:scale-110 hover:text-blue-400 transition-all duration-300" href="evento.html">Eventos</a>
+<a class="text-pink-400 dark:text-pink-300 font-bold font-['Be_Vietnam_Pro'] font-black uppercase tracking-tighter hover:scale-110 hover:text-blue-400 transition-all duration-300" href="https://wa.me/5511959166738" target="_blank">Contato</a>
+
+</nav>
+<p class="bg-[#fff349] text-[#1A1A1A] px-10 py-2 rounded-full font-bold text-sm uppercase tracking-wider hover:scale-110 active:scale-95 transition-all duration-300 shadow-md" style="border-radius:10px 5px">
+            Gago's shake
+        </p>
+</header>
+<main class="relative overflow-hidden">
+<!-- Hero Section -->
+<section class="min-h-[921px] flex items-center pt-xl pb-xl px-margin relative">
+<!-- Fluid Background Shapes -->
+<div class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-secondary/10 rounded-full blob-bg"></div>
+<div class="absolute bottom-[5%] left-[-10%] w-[600px] h-[600px] bg-secondary-container/20 rounded-full blob-bg"></div>
+<div class="absolute top-[20%] left-[30%] w-[300px] h-[300px] bg-tertiary-fixed/30 rounded-full blob-bg"></div>
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-lg items-center">
+<!-- Content Column -->
+<div class="relative z-10 space-y-md text-center lg:text-left">
+<div class="inline-block bg-[#22b6f4] text-white px-4 py-1 rounded-full text-label-bold font-label-bold">
+                        O MELHOR SHAKE POP-UP
+                    </div>
+<h1 class="text-display-lg font-display-lg text-secondary uppercase leading-[1] tracking-tighter">
+                        Explosão de Sabor no <br/>
+<span class="text-[#22b6f4]">Seu Evento!</span>
+</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl mx-auto lg:mx-0">
+                        Transforme sua festa em um espetáculo de cores e sabores. Milkshakes artesanais, ultra cremosos e decorados com o estilo vibrante da Gago's Shake.
+                    </p>
+<div class="pt-sm">
+<button class="bg-[#fff349] text-[#1A1A1A] px-xl py-md rounded-full text-headline-md font-headline-md shadow-[0_10px_0_#d5ca1c] hover:translate-y-1 hover:shadow-[0_6px_0_#d5ca1c] active:translate-y-2 active:shadow-none transition-all duration-150">
+                            <a href="https://wa.me/5511959166738" target="_blank">Quero no meu Evento</a>
+                        </button>
+</div>
+<div class="flex items-center justify-center lg:justify-start gap-4 pt-md">
+<div class="flex -space-x-3">
+<img class="w-12 h-12 rounded-full border-4 border-white object-cover" data-alt="portrait of a smiling young woman enjoying a milkshake at a party" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBAspRqs7fVA7eQ4PhK7bKK0itPENyOv2gJThpSvfC9h3f7ejq7O3sgy17eflZIry1dHVMCGV4uyLeF_pQNTEuaiLYOh_5ZVSQCPG4Cxcd05CNJYCwTR3AvtT3nBAIZyOPcFa04-XwhOJSUgsIj807UEsHneFHjB4ahjU-lbiERcl-V2yIvfgGsCNQzXd00xW8c-lZTcdK0IEdkKWsN47Qq5-Ru9yQPufe8oA3WeUShNIx8zabu77HDRGd8aWk_UZblTTFEERQR7n1"/>
+<img class="w-12 h-12 rounded-full border-4 border-white object-cover" data-alt="portrait of a young man with a fun expression holding a colorful drink" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2xbNgDRFxET_Nw1T4AxI5gi_7XLOruV7DxEjKpSBxAeR3a56atyCwxbncY_lWDCuImjKNOq_mfuFylOiCawtGCT3N1Muk3byJ3fkWmKWPXTRgEDSPoWeMvWRZAjGu1m3C5ptX64KF0Zfb1yrPYAiK8VW4pzaD1OnIKcw9-TCs6HZSjN8nwlXUFoRog06-aV-6GwXdRnp2KsPRnVo1MTHlxgrN5hgl3l0XgphuS1wcJCH5zk0LdOrG93_Ak_-B4TcQPmicMVHFEqrq"/>
+<img class="w-12 h-12 rounded-full border-4 border-white object-cover" data-alt="close up of a happy person at a festival" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3QcrQJDnD_JIgcpZWSH1aUzKQ8TQXeIto9LCefpZKbYIqdgqwB3iqLEu8j2ChtSa8O7ZvX5OK8BfIa32bMDl4U8dxYok2GJLWnaYhezLCzjaq8EOdT_2_MZbHl49sZ5iFVS7f0IvL2QED50zuw1_9KmuHiht5ohh-zsgTIu_bTEVhkyG2hBSntgsuCJgyUAMiwsNkt2C6ZzJlxoM9rzTq5fAKv9wuQVLut4daY6yEvaJCaRoiDUYZExxitp-fkHVfq6GjImbvWg7G"/>
+
+</div>
+<p class="text-label-bold font-label-bold text-on-surface-variant">+500 eventos realizados este ano!</p>
+</div>
+</div>
+<!-- Visual Column -->
+<div class="relative flex justify-center items-center">
+<!-- Swirl Decorative SVG Background -->
+<div class="absolute inset-0 z-0">
+<svg class="w-full h-full opacity-30" viewbox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.3,-71.4C55.2,-63.9,66.4,-52.8,74.7,-39.8C83,-26.8,88.4,-11.9,86.1,1.3C83.7,14.5,73.6,26.1,63.9,37C54.2,47.9,44.9,58,33.5,65.6C22.2,73.2,8.8,78.2,-4.1,85.2C-16.9,92.3,-29.2,101.4,-41.8,100.2C-54.4,98.9,-67.2,87.4,-75.7,73.4C-84.2,59.3,-88.3,42.7,-91.3,26.5C-94.2,10.3,-95.9,-5.4,-91.3,-19.9C-86.7,-34.5,-75.8,-47.9,-62.7,-55.4C-49.6,-62.8,-34.3,-64.3,-20.5,-70.6C-6.7,-76.8,5.7,-87.9,19.2,-85.7C32.7,-83.5,47.3,-68.1,42.3,-71.4Z" fill="#fd51ba" transform="translate(250 250)"></path>
+</svg>
+</div>
+<!-- Hero Milkshake Image -->
+<div class="relative z-10 w-full max-w-md hero-milkshake-shadow">
+<img class="w-full h-auto object-contain transform hover:rotate-2 transition-transform duration-500" data-alt="thick creamy strawberry milkshake in a tall glass topped with massive swirls of whipped cream, pink sprinkles, and a cherry on a bright pop background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-n61Ye3ljImmEPHGfvHpthT7zbQhsH6qJbd34_jww508jkupvrA7H0xqgRA342K2shmG82PqB1akenpL6BPv2-DLsV6C0QZgYgAAv9Z5MU33yUyKhxblhLghTwugjK5UDAycmZsnw_7FU-BZHC8dnM0535zvAH-GXU-w-RJVg6MOfkhClipcQWKCuYQP4WCMPK8wojNpWprk51dJljFXVCMG0w5lmNAB7wj8qQax4es6U4usJvR710CQ56mMqF94kS_H-2_BJusoI"/>
+<!-- Floating Badge -->
+<div class="absolute -bottom-4 -left-4 bg-tertiary-fixed p-6 rounded-full shadow-lg transform -rotate-12 border-4 border-white">
+<p class="text-[#1A1A1A] font-black text-xl text-center leading-tight">100%<br/>GOSTOSO</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Wave Divider -->
+<div class="w-full overflow-hidden leading-[0]">
+<svg class="relative block w-full h-[60px] text-pink-50" preserveaspectratio="none" viewbox="0 0 1200 120">
+<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="currentColor"></path>
+</svg>
+</div>
+<!-- Bento Grid Preview Section -->
+<section class="bg-pink-50 dark:bg-slate-950 py-xl px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Main Card -->
+<div class="md:col-span-2 bg-white dark:bg-slate-900 p-lg rounded-xl shadow-xl shadow-pink-200/50 dark:shadow-none flex flex-col md:flex-row gap-md items-center overflow-hidden relative group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150"></div>
+
+
+
+<div class="flex-1 space-y-sm relative z-10">
+<span class="text-[#22b6f4] font-label-bold uppercase tracking-widest">O Clássico</span>
+<h3 class="text-headline-lg font-headline-lg text-secondary">Novo Sabor</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">O que era bom ficou ainda melhor! Chegou o novo sabor [Moda da casa]: carregado de adicionais, com aquele sabor irresistível que vai ser o hit da sua próxima festa. Quem prova, pede bis!"</p>
+<button class="flex items-center gap-base text-secondary font-bold hover:gap-md transition-all">
+                                Monte o seu com até 2 sabores<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+
+
+
+<div class="w-full md:w-64 h-64 relative z-10" id="taxa">
+<img class="w-full h-full object-cover rounded-lg" data-alt="close up of a decadent pink milkshake with whipped cream and sprinkles in a vintage glass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQS7B4UbjQL2K34Fg8rm93o9_VNBKu6OtBXXBUNJvAgW11uADaNCMCCgLTcLbaVpIU2bLvmjZOsS3L3zgXkne24WiGrQYoDCGFXmyI0GT0LOLPHe5LcYsIUfE7IBZ-_Tl9XfeRJf6XHKyHiUHHOzVd8voSeHgJ1AWr7Kn5hd2zeqYNgG4sGumBzCZFAJlGH2OBVIAfuqbtCnKjmMqpMxp8Jl0Ay5A2rXhglzAX76o3pZSwFNgfMFY3fZfD5eK0zOe7bzGgqjais7MS"/>
+</div>
+</div>
+
+<!-- Mini Stats Card -->
+<div class="bg-secondary p-lg rounded-xl flex flex-col justify-center items-center text-center text-white space-y-sm" >
+<span class="material-symbols-outlined text-5xl" style="font-variation-settings: 'FILL' 1;">celebration</span>
+<div class="text-display-lg font-display-lg leading-none">98%</div>
+<p class="text-label-bold font-label-bold uppercase">Taxa de Sorrisos</p>
+</div>
+<!-- Event Card -->
+<div class="bg-[#22b6f4] p-lg rounded-xl text-white relative overflow-hidden group" id="estacao">
+<div class="space-y-sm relative z-10" >
+<h4 class="text-headline-md font-headline-md italic uppercase">Casamentos &amp; Festas</h4>
+<p class="text-body-md font-body-md opacity-90">Nossa estação móvel de shakes é a atração principal que faltava no seu evento corporativo ou social.</p>
+<div class="pt-sm">
+<span class="material-symbols-outlined text-4xl group-hover:translate-x-4 transition-transform">shutter_speed</span>
+</div>
+</div>
+</div>
+<!-- Catalog Preview -->
+<div class="md:col-span-2 bg-tertiary-fixed p-lg rounded-xl flex flex-col md:flex-row justify-between items-center gap-md">
+<div class="flex-1">
+<h4 class="text-headline-md font-headline-md text-on-tertiary-fixed">Mais de 20 Sabores <br/>Exclusivos</h4>
+<p class="text-body-md font-body-md text-on-tertiary-fixed-variant">Desde o tradicional Chocolate até criações como ...</p>
+</div>
+<div class="flex gap-sm">
+<div class="w-20 h-20 rounded-full border-4 border-white bg-white overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="chocolate milkshake with fudge drizzle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9R8sLRUiVm1clckQs8kR_DoVgOyvQGBhBj7XY0ABkhfwv1849zoFK3umqJ3zYq-2NsoA8poTSvvoQTSalFwFEid7MwsAr7mozBSedT3bE0MKe126WvGu12ewpAz4SHlaOgQkKZnBKTDqVIXzbTiCu8hU2tGXdwbBYWShLmskVwB-WcAW69Oc04WoVQ4DtM0kLpzoCt176rqn-v1SNgQVj-T-02zT5J0_UBoBgd9PJT6vRVLQGhasLdN9Lp5e1auGAxIWyfYl5dNco"/>
+</div>
+<div class="w-20 h-20 rounded-full border-4 border-white bg-white overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="blueberry milkshake with fruit on top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDggWlBpZ4Bo51KjhnaXpfo5R7wXCm-LKig40j4q0nwlo97KTw8J9ASHPFWsizNmaTsnhkyG7FaUbT4ep0-evk9zEuaQw3Mv3Lcw49uqkvC6CeDszJ6wh2cb-SQJC9QIiXsugTv269rJzZ1k4cC0Q2R-j3Hy5_IKACj0XOZcPOwQ6gGDd_P15qeXA3HuTjMz7UDnBk1z95nO9ouO0UbCnmrJakbLxG2MYd5lNgCdcV4EY_LOgTGLcr8bZ7ty_g3rEU_vzgpOhF9OPy0"/>
+</div>
+<div class="w-20 h-20 rounded-full border-4 border-white bg-white overflow-hidden flex items-center justify-center text-secondary font-black">
+                                +15
+                            </div>
+</div>
+</div>
+</div>
+
+<div id="sabores"></div>
+</div>
+</section>
+
+
+<main class="flex-grow pt-lg px-margin relative">
+<!-- Organic Background Blob Decoration -->
+<div class="absolute -top-20 -right-20 w-96 h-96 bg-secondary-fixed/30 rounded-full blur-3xl -z-10"></div>
+<div class="absolute top-1/2 -left-20 w-80 h-80 bg-tertiary-fixed/20 rounded-full blur-3xl -z-10"></div>
+<section class="max-w-7xl mx-auto mb-xl">
+<header class="mb-lg">
+<h1 class="font-display-lg text-headline-lg text-pink-600 mb-sm">Nossos Sabores Irresistíveis</h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl">Saboreie a felicidade em cada gole!</p>
+</header>
+
+<!-- Carousel Component -->
+<div class="relative group max-w-full px-4">
+  
+  <!-- Botão Prev -->
+  <button onclick="document.getElementById('carousel').scrollBy({left: -400, behavior: 'smooth'})" 
+          class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 shadow-lg rounded-full p-2 text-pink-600 hover:scale-110 transition-transform hidden md:block border border-pink-100">
+    <span class="material-symbols-outlined">chevron_left</span>
+  </button>
+
+  <!-- Botão Next -->
+  <button onclick="document.getElementById('carousel').scrollBy({left: 400, behavior: 'smooth'})" 
+          class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 shadow-lg rounded-full p-2 text-pink-600 hover:scale-110 transition-transform hidden md:block border border-pink-100">
+    <span class="material-symbols-outlined">chevron_right</span>
+  </button>
+
+  <!-- Container dos Cards -->
+  <!-- O 'flex-nowrap' impede que os cards desçam para a próxima linha -->
+  <div id="carousel" class="flex flex-nowrap gap-6 overflow-x-auto pb-8 hide-scrollbar snap-x snap-mandatory scroll-smooth">
+
+    <!-- Card 1 -->
+    <div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <!-- Conteúdo da imagem e texto aqui (conforme seu original) -->
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP9dDziac4TibsbayDLSMbMq8ZfNKYSfjSaUiApOK6Ebep3Ia1LAv-S6-kU8QdtRtUgogB7WoUKZmm8PvQolbCc8xTi-oo-FJuMBpZBgENlc7uU3AZk7UmJKhH60p5mcdCXtoM_zMaQMsporHHtf1sPNC8jLdosnhLDrNQB4ndJvOdHN-HnBTSGAG-RLdATU7tM-L4uleqcl8Dt9QEif091Nzt3ZKF0G_W7MT7Bio-KS9GjLaCAMhACjgfEpzQxt3MuAb0792wIIh4">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de morango</h3>
+				
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu0orWP6oRsCZaXktNm4x6FAY0ak4E9Zn2vHZE-z4qhi2nE8GuUlc8PRQYvBy5366cz-1FMwfDT_9-kVb74jL1vdRKEVpjO2weRNGtliKgkVnfq3pEOuBghA8w8iofsjHQGY24WMyVNjTMasiEOGyeCna8qzN02nmSxDOKC9TD9Zh3pRJvSf4gitTCw_FLYXv-bu_1_RhMeP7-wfJOMkPX9dRy-CfmfYea0_QNUcp7NtltnwxQ1iXxEZGtNVoi5VeMHhh1Ooxnth1n">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de chocolate</h3>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgHc8tuJYz9_cXpp39nzLwYwAUwvqEgcOBsND1PtDY_zQJ5cDM42PoR05_8cUbnNGnKl4p6FKzaAWwrt702bg4dtux3DEssr71A7Vnb4lGp6mNWMNWI-ct2cyrt1KnPbPBr8Jyn0ocvMO_UEpYfDZ8iEUk96hOdiFNjdFSdQKq3aQXEcNSA1kfkyY83Ze5QtH4GUb7lcb7o9ZjG9i28-EKI8guGwZFSSRZsIuZD_y7JU6U2zlxrXaxO2tsbrKj9OjsP0Q8DLPV5VmR">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de banana</h3>
+      </div>
+    </div>
+
+    <!-- Card 4 (O novo card) -->
+    <div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP9dDziac4TibsbayDLSMbMq8ZfNKYSfjSaUiApOK6Ebep3Ia1LAv-S6-kU8QdtRtUgogB7WoUKZmm8PvQolbCc8xTi-oo-FJuMBpZBgENlc7uU3AZk7UmJKhH60p5mcdCXtoM_zMaQMsporHHtf1sPNC8jLdosnhLDrNQB4ndJvOdHN-HnBTSGAG-RLdATU7tM-L4uleqcl8Dt9QEif091Nzt3ZKF0G_W7MT7Bio-KS9GjLaCAMhACjgfEpzQxt3MuAb0792wIIh4">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de café</h3>
+      </div>
+    </div>
+		
+		<div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu0orWP6oRsCZaXktNm4x6FAY0ak4E9Zn2vHZE-z4qhi2nE8GuUlc8PRQYvBy5366cz-1FMwfDT_9-kVb74jL1vdRKEVpjO2weRNGtliKgkVnfq3pEOuBghA8w8iofsjHQGY24WMyVNjTMasiEOGyeCna8qzN02nmSxDOKC9TD9Zh3pRJvSf4gitTCw_FLYXv-bu_1_RhMeP7-wfJOMkPX9dRy-CfmfYea0_QNUcp7NtltnwxQ1iXxEZGtNVoi5VeMHhh1Ooxnth1n">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de baunilha</h3>
+      </div>
+    </div>
+		
+		
+		
+		
+		 <div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgHc8tuJYz9_cXpp39nzLwYwAUwvqEgcOBsND1PtDY_zQJ5cDM42PoR05_8cUbnNGnKl4p6FKzaAWwrt702bg4dtux3DEssr71A7Vnb4lGp6mNWMNWI-ct2cyrt1KnPbPBr8Jyn0ocvMO_UEpYfDZ8iEUk96hOdiFNjdFSdQKq3aQXEcNSA1kfkyY83Ze5QtH4GUb7lcb7o9ZjG9i28-EKI8guGwZFSSRZsIuZD_y7JU6U2zlxrXaxO2tsbrKj9OjsP0Q8DLPV5VmR">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de brownie</h3>
+      </div>
+    </div>
+		
+		
+		 <div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgHc8tuJYz9_cXpp39nzLwYwAUwvqEgcOBsND1PtDY_zQJ5cDM42PoR05_8cUbnNGnKl4p6FKzaAWwrt702bg4dtux3DEssr71A7Vnb4lGp6mNWMNWI-ct2cyrt1KnPbPBr8Jyn0ocvMO_UEpYfDZ8iEUk96hOdiFNjdFSdQKq3aQXEcNSA1kfkyY83Ze5QtH4GUb7lcb7o9ZjG9i28-EKI8guGwZFSSRZsIuZD_y7JU6U2zlxrXaxO2tsbrKj9OjsP0Q8DLPV5VmR">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de farinha láctea</h3>
+      </div>
+    </div>
+		
+		
+		 <div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgHc8tuJYz9_cXpp39nzLwYwAUwvqEgcOBsND1PtDY_zQJ5cDM42PoR05_8cUbnNGnKl4p6FKzaAWwrt702bg4dtux3DEssr71A7Vnb4lGp6mNWMNWI-ct2cyrt1KnPbPBr8Jyn0ocvMO_UEpYfDZ8iEUk96hOdiFNjdFSdQKq3aQXEcNSA1kfkyY83Ze5QtH4GUb7lcb7o9ZjG9i28-EKI8guGwZFSSRZsIuZD_y7JU6U2zlxrXaxO2tsbrKj9OjsP0Q8DLPV5VmR">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de frutas vermelhas</h3>
+      </div>
+    </div>
+		
+		<div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu0orWP6oRsCZaXktNm4x6FAY0ak4E9Zn2vHZE-z4qhi2nE8GuUlc8PRQYvBy5366cz-1FMwfDT_9-kVb74jL1vdRKEVpjO2weRNGtliKgkVnfq3pEOuBghA8w8iofsjHQGY24WMyVNjTMasiEOGyeCna8qzN02nmSxDOKC9TD9Zh3pRJvSf4gitTCw_FLYXv-bu_1_RhMeP7-wfJOMkPX9dRy-CfmfYea0_QNUcp7NtltnwxQ1iXxEZGtNVoi5VeMHhh1Ooxnth1n">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de leite ninho)</h3>
+      </div>
+    </div>
+		
+		
+		<div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu0orWP6oRsCZaXktNm4x6FAY0ak4E9Zn2vHZE-z4qhi2nE8GuUlc8PRQYvBy5366cz-1FMwfDT_9-kVb74jL1vdRKEVpjO2weRNGtliKgkVnfq3pEOuBghA8w8iofsjHQGY24WMyVNjTMasiEOGyeCna8qzN02nmSxDOKC9TD9Zh3pRJvSf4gitTCw_FLYXv-bu_1_RhMeP7-wfJOMkPX9dRy-CfmfYea0_QNUcp7NtltnwxQ1iXxEZGtNVoi5VeMHhh1Ooxnth1n">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de menta)</h3>
+      </div>
+    </div>
+
+  </div> <!-- Fim do Carousel -->
+
+</div> <!-- Fim do Relative Group -->
+
+
+<!-- Segundo Carrossel (Ajustado com ID 'carousel-2') -->
+<div class="relative group max-w-full px-4 mt-10">
+  
+  <!-- Botão Prev ajustado para o carousel-2 -->
+  <button onclick="document.getElementById('carousel-2').scrollBy({left: -400, behavior: 'smooth'})" 
+          class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 shadow-lg rounded-full p-2 text-pink-600 hover:scale-110 transition-transform hidden md:block border border-pink-100">
+    <span class="material-symbols-outlined">chevron_left</span>
+  </button>
+
+  <!-- Botão Next ajustado para o carousel-2 -->
+  <button onclick="document.getElementById('carousel-2').scrollBy({left: 400, behavior: 'smooth'})" 
+          class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 shadow-lg rounded-full p-2 text-pink-600 hover:scale-110 transition-transform hidden md:block border border-pink-100">
+    <span class="material-symbols-outlined">chevron_right</span>
+  </button>
+
+  <!-- Container com ID único: carousel-2 -->
+  <div id="carousel-2" class="flex flex-nowrap gap-6 overflow-x-auto pb-8 hide-scrollbar snap-x snap-mandatory scroll-smooth">
+
+    <!-- Card 1 -->
+    <div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP9dDziac4TibsbayDLSMbMq8ZfNKYSfjSaUiApOK6Ebep3Ia1LAv-S6-kU8QdtRtUgogB7WoUKZmm8PvQolbCc8xTi-oo-FJuMBpZBgENlc7uU3AZk7UmJKhH60p5mcdCXtoM_zMaQMsporHHtf1sPNC8jLdosnhLDrNQB4ndJvOdHN-HnBTSGAG-RLdATU7tM-L4uleqcl8Dt9QEif091Nzt3ZKF0G_W7MT7Bio-KS9GjLaCAMhACjgfEpzQxt3MuAb0792wIIh4">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake chocolate branco</h3>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu0orWP6oRsCZaXktNm4x6FAY0ak4E9Zn2vHZE-z4qhi2nE8GuUlc8PRQYvBy5366cz-1FMwfDT_9-kVb74jL1vdRKEVpjO2weRNGtliKgkVnfq3pEOuBghA8w8iofsjHQGY24WMyVNjTMasiEOGyeCna8qzN02nmSxDOKC9TD9Zh3pRJvSf4gitTCw_FLYXv-bu_1_RhMeP7-wfJOMkPX9dRy-CfmfYea0_QNUcp7NtltnwxQ1iXxEZGtNVoi5VeMHhh1Ooxnth1n">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de doce de leite</h3>
+      </div>
+    </div>
+		
+		
+		<div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu0orWP6oRsCZaXktNm4x6FAY0ak4E9Zn2vHZE-z4qhi2nE8GuUlc8PRQYvBy5366cz-1FMwfDT_9-kVb74jL1vdRKEVpjO2weRNGtliKgkVnfq3pEOuBghA8w8iofsjHQGY24WMyVNjTMasiEOGyeCna8qzN02nmSxDOKC9TD9Zh3pRJvSf4gitTCw_FLYXv-bu_1_RhMeP7-wfJOMkPX9dRy-CfmfYea0_QNUcp7NtltnwxQ1iXxEZGtNVoi5VeMHhh1Ooxnth1n">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de Pistache</h3>
+      </div>
+    </div>
+
+    <!-- Adicione os outros cards aqui seguindo a mesma estrutura... -->
+		
+		<div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgHc8tuJYz9_cXpp39nzLwYwAUwvqEgcOBsND1PtDY_zQJ5cDM42PoR05_8cUbnNGnKl4p6FKzaAWwrt702bg4dtux3DEssr71A7Vnb4lGp6mNWMNWI-ct2cyrt1KnPbPBr8Jyn0ocvMO_UEpYfDZ8iEUk96hOdiFNjdFSdQKq3aQXEcNSA1kfkyY83Ze5QtH4GUb7lcb7o9ZjG9i28-EKI8guGwZFSSRZsIuZD_y7JU6U2zlxrXaxO2tsbrKj9OjsP0Q8DLPV5VmR">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de limão</h3>
+      </div>
+    </div>
+		
+		<div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu0orWP6oRsCZaXktNm4x6FAY0ak4E9Zn2vHZE-z4qhi2nE8GuUlc8PRQYvBy5366cz-1FMwfDT_9-kVb74jL1vdRKEVpjO2weRNGtliKgkVnfq3pEOuBghA8w8iofsjHQGY24WMyVNjTMasiEOGyeCna8qzN02nmSxDOKC9TD9Zh3pRJvSf4gitTCw_FLYXv-bu_1_RhMeP7-wfJOMkPX9dRy-CfmfYea0_QNUcp7NtltnwxQ1iXxEZGtNVoi5VeMHhh1Ooxnth1n">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de milho</h3>
+      </div>
+    </div>
+		
+		<div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP9dDziac4TibsbayDLSMbMq8ZfNKYSfjSaUiApOK6Ebep3Ia1LAv-S6-kU8QdtRtUgogB7WoUKZmm8PvQolbCc8xTi-oo-FJuMBpZBgENlc7uU3AZk7UmJKhH60p5mcdCXtoM_zMaQMsporHHtf1sPNC8jLdosnhLDrNQB4ndJvOdHN-HnBTSGAG-RLdATU7tM-L4uleqcl8Dt9QEif091Nzt3ZKF0G_W7MT7Bio-KS9GjLaCAMhACjgfEpzQxt3MuAb0792wIIh4">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de Negresco</h3>
+      </div>
+    </div>
+		
+		
+		<div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP9dDziac4TibsbayDLSMbMq8ZfNKYSfjSaUiApOK6Ebep3Ia1LAv-S6-kU8QdtRtUgogB7WoUKZmm8PvQolbCc8xTi-oo-FJuMBpZBgENlc7uU3AZk7UmJKhH60p5mcdCXtoM_zMaQMsporHHtf1sPNC8jLdosnhLDrNQB4ndJvOdHN-HnBTSGAG-RLdATU7tM-L4uleqcl8Dt9QEif091Nzt3ZKF0G_W7MT7Bio-KS9GjLaCAMhACjgfEpzQxt3MuAb0792wIIh4">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de Nutella</h3>
+      </div>
+    </div>
+		
+		
+		<div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu0orWP6oRsCZaXktNm4x6FAY0ak4E9Zn2vHZE-z4qhi2nE8GuUlc8PRQYvBy5366cz-1FMwfDT_9-kVb74jL1vdRKEVpjO2weRNGtliKgkVnfq3pEOuBghA8w8iofsjHQGY24WMyVNjTMasiEOGyeCna8qzN02nmSxDOKC9TD9Zh3pRJvSf4gitTCw_FLYXv-bu_1_RhMeP7-wfJOMkPX9dRy-CfmfYea0_QNUcp7NtltnwxQ1iXxEZGtNVoi5VeMHhh1Ooxnth1n">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de Ovomaltine</h3>
+      </div>
+    </div>
+		
+		<div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu0orWP6oRsCZaXktNm4x6FAY0ak4E9Zn2vHZE-z4qhi2nE8GuUlc8PRQYvBy5366cz-1FMwfDT_9-kVb74jL1vdRKEVpjO2weRNGtliKgkVnfq3pEOuBghA8w8iofsjHQGY24WMyVNjTMasiEOGyeCna8qzN02nmSxDOKC9TD9Zh3pRJvSf4gitTCw_FLYXv-bu_1_RhMeP7-wfJOMkPX9dRy-CfmfYea0_QNUcp7NtltnwxQ1iXxEZGtNVoi5VeMHhh1Ooxnth1n">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake de amarula (alcoólico)</h3>
+      </div>
+    </div>
+		
+		<div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu0orWP6oRsCZaXktNm4x6FAY0ak4E9Zn2vHZE-z4qhi2nE8GuUlc8PRQYvBy5366cz-1FMwfDT_9-kVb74jL1vdRKEVpjO2weRNGtliKgkVnfq3pEOuBghA8w8iofsjHQGY24WMyVNjTMasiEOGyeCna8qzN02nmSxDOKC9TD9Zh3pRJvSf4gitTCw_FLYXv-bu_1_RhMeP7-wfJOMkPX9dRy-CfmfYea0_QNUcp7NtltnwxQ1iXxEZGtNVoi5VeMHhh1Ooxnth1n">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center">Shake busca vida (alcoólico)</h3>
+      </div>
+    </div>
+		
+		
+		<div class="flex-none w-[280px] sm:w-[400px] snap-start">
+      <div class="bg-white rounded-xl border-4 border-pink-100 p-4 h-full flex flex-col hover:translate-y-[-8px] transition-transform duration-300">
+        <div class="relative overflow-hidden rounded-lg mb-4 aspect-[4/5]">
+             <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu0orWP6oRsCZaXktNm4x6FAY0ak4E9Zn2vHZE-z4qhi2nE8GuUlc8PRQYvBy5366cz-1FMwfDT_9-kVb74jL1vdRKEVpjO2weRNGtliKgkVnfq3pEOuBghA8w8iofsjHQGY24WMyVNjTMasiEOGyeCna8qzN02nmSxDOKC9TD9Zh3pRJvSf4gitTCw_FLYXv-bu_1_RhMeP7-wfJOMkPX9dRy-CfmfYea0_QNUcp7NtltnwxQ1iXxEZGtNVoi5VeMHhh1Ooxnth1n">
+        </div>
+        <h3 class="font-bold text-pink-600" style="text-align:center"	>Shake de vodka(alcoólico)</h3>
+      </div>
+    </div>
+		
+		
+
+  </div> 
+</div> 
+   
+	 <div id="neta">
+	 
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto mb-xl bg-pink-50 rounded-xl p-lg flex flex-col md:flex-row items-center justify-between gap-lg overflow-hidden relative">
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-pink-200/50 rounded-full blur-2xl"></div>
+<div class="relative z-10 max-w-xl">
+<h2 class="font-headline-lg text-pink-600 mb-md">Wellington</h2>
+<p class="font-body-lg text-pink-800 mb-lg">Nós, da <span style="font-weight:900;color:#222">Gago's Shake</span>, acreditamos que a felicidade tem sabor de <span style="font-weight:900;color:#222">infância</span>. Cada detalhe das nossas receitas — do sorvete ultra cremoso à calda generosa — é pensado para transformar um simples momento em uma memória inesquecível.</p>
+<div class="flex flex-col sm:flex-row gap-md">
+<!-- 
+<button class="bg-[#fff349] text-[#1A1A1A] font-label-bold px-10 py-4 rounded-full hover:scale-105 transition-transform shake-pop-shadow active:scale-95 whitespace-nowrap">
+                        <a href="">Contato</a>
+                    </button>
+-->
+</div>
+</div>
+<div class="relative w-full md:w-1/3 aspect-square max-w-xs">
+<div class="absolute inset-0 bg-[#F043A8] rounded-full animate-pulse opacity-10"></div>
+<img class="w-full h-full object-contain relative z-10" data-alt="happy illustration of a milkshake mascot wearing sunglasses and holding a discount coupon" src="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/img/img6.jpg"/ id="imgNeta">
+</div>
+</section>
+	 </div>
+
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-pink-50 w-full rounded-t-[64px] py-12 px-8 border-t-4 border-pink-100">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
+<div class="text-left flex flex-col items-center md:items-start gap-4">
+<div class="text-xl font-black text-pink-600 font-headline-lg">Gago's Shake</div>
+<p class="font-['Be_Vietnam_Pro'] font-medium text-pink-800 text-center md:text-left">© 2026 Copy Right | By <a href="https://maudev.com.br">Mauricio Honorato</a></p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-pink-800 font-bold hover:text-blue-500 transition-colors hover:translate-y-[-2px]" href="#conteudoTodo">Inicio</a>
+<a class="text-pink-800 font-bold hover:text-blue-500 transition-colors hover:translate-y-[-2px]" href="evento.html">Eventos</a>
+<a class="text-pink-800 font-bold hover:text-blue-500 transition-colors hover:translate-y-[-2px]" href="#">Politica de Privacidade</a>
+<a class="text-pink-800 font-bold hover:text-blue-500 transition-colors hover:translate-y-[-2px]" href="https://wa.me/5511959166738" target="_blank">Contato</a>
+</div>
+<div class="flex gap-md">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pink-600 hover:scale-110 transition-transform cursor-pointer">
+<div id="btn-share" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pink-600 hover:scale-110 transition-transform cursor-pointer">
+  <span class="material-symbols-outlined">share</span>
+</div>
+
+</div>
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pink-600 hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined"> <a href="https://www.google.com/maps/place/gagos+shake/@-23.4993958,-46.4233931,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce635ca5e6caab:0x356169267584e713!8m2!3d-23.4994007!4d-46.4208182!16s%2Fg%2F11x1lsy5qn?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"> location_on </a> </span>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+
+
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#7e7700",
+                        "on-tertiary-fixed": "#1e1c00",
+                        "inverse-surface": "#313030",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-surface-variant": "#444748",
+                        "surface-container-high": "#eae7e7",
+                        "surface": "#fcf9f8",
+                        "on-primary-container": "#737575",
+                        "primary": "#5d5f5f",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#c6c6c7",
+                        "outline-variant": "#c4c7c8",
+                        "surface-variant": "#e5e2e1",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#dcd9d9",
+                        "on-background": "#1c1b1b",
+                        "primary-fixed": "#e2e2e2",
+                        "secondary-fixed-dim": "#ffafd6",
+                        "surface-container": "#f0eded",
+                        "primary-container": "#fdfdfd",
+                        "error": "#ba1a1a",
+                        "secondary": "#b4007e",
+                        "surface-tint": "#5d5f5f",
+                        "secondary-container": "#fd51ba",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1c1b1b",
+                        "on-secondary-fixed-variant": "#8a0060",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "tertiary-fixed-dim": "#d5ca1c",
+                        "on-primary-fixed": "#1a1c1c",
+                        "on-secondary-container": "#5e0040",
+                        "outline": "#747878",
+                        "on-secondary-fixed": "#3c0028",
+                        "on-tertiary-fixed-variant": "#4d4800",
+                        "tertiary-fixed": "#f2e73d",
+                        "surface-container-low": "#f6f3f2",
+                        "tertiary-container": "#fffcff",
+                        "tertiary": "#666000",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#454747",
+                        "secondary-fixed": "#ffd8e8",
+                        "background": "#fcf9f8",
+                        "surface-bright": "#fcf9f8",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "lg": "48px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "margin": "32px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-bold": ["Plus Jakarta Sans"],
+                        "display-lg": ["Be Vietnam Pro"],
+                        "headline-lg": ["Be Vietnam Pro"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "500"}],
+                        "label-bold": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+		
+		<script>
+		document.getElementById('btn-share').addEventListener('click', () => {
+  if (navigator.share) {
+    navigator.share({
+      title: 'Gago Shake',
+      text: 'Confira esse site incrível!',
+      url: window.location.href // Pega o link atual da página
+    })
+  } else {
+    // Caso o navegador não suporte (ex: PCs antigos), você pode copiar o link pro clipboard
+    alert("Link copiado para a área de transferência!");
+    navigator.clipboard.writeText(window.location.href);
+  }
+});
+
+		</script>
+
+
+</body></html>

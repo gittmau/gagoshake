@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta name="description" content="Saboreie os milkshakes mais cremosos e gelados da região! Diversos sabores, do clássico chocolate às criações especiais. Venha experimentar uma explosão de doçura e frescor">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Milkshakes Cremosos e Especiais | Gagos Shake">
+  <meta property="og:description" content="Saboreie os milkshakes mais cremosos e gelados da região! Diversos sabores, do clássico chocolate às criações especiais. Venha experimentar uma explosão de doçura e frescor.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/img/capa.png"><!--Img que aparecerá no link-->
+  <meta property="og:url" content="https://gittmau.github.io/gagoshake/"><!--link do site-->
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Milkshakes Cremosos e Especiais | Gagos Shake">
+  <meta name="twitter:description" content="Saboreie os milkshakes mais cremosos e gelados da região! Diversos sabores, do clássico chocolate às criações especiais. Venha experimentar uma explosão de doçura e frescor">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/img/capa.png"><!--img que aparecerá no twitter-->
+  <meta name="author" content="Mauricio F. Honorato dos Santos">
+    <title>Milkshakes Cremosos e Especiais | Gagos Shake</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+
+<link rel="icon" href="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/img/logo.png">
+
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#7e7700",
+                    "on-tertiary-fixed": "#1e1c00",
+                    "inverse-surface": "#313030",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-surface-variant": "#444748",
+                    "surface-container-high": "#eae7e7",
+                    "surface": "#fcf9f8",
+                    "on-primary-container": "#737575",
+                    "primary": "#5d5f5f",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#c6c6c7",
+                    "outline-variant": "#c4c7c8",
+                    "surface-variant": "#e5e2e1",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#dcd9d9",
+                    "on-background": "#1c1b1b",
+                    "primary-fixed": "#e2e2e2",
+                    "secondary-fixed-dim": "#ffafd6",
+                    "surface-container": "#f0eded",
+                    "primary-container": "#fdfdfd",
+                    "error": "#ba1a1a",
+                    "secondary": "#b4007e",
+                    "surface-tint": "#5d5f5f",
+                    "secondary-container": "#fd51ba",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1c1b1b",
+                    "on-secondary-fixed-variant": "#8a0060",
+                    "primary-fixed-dim": "#c6c6c7",
+                    "tertiary-fixed-dim": "#d5ca1c",
+                    "on-primary-fixed": "#1a1c1c",
+                    "on-secondary-container": "#5e0040",
+                    "outline": "#747878",
+                    "on-secondary-fixed": "#3c0028",
+                    "on-tertiary-fixed-variant": "#4d4800",
+                    "tertiary-fixed": "#f2e73d",
+                    "surface-container-low": "#f6f3f2",
+                    "tertiary-container": "#fffcff",
+                    "tertiary": "#666000",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#454747",
+                    "secondary-fixed": "#ffd8e8",
+                    "background": "#fcf9f8",
+                    "surface-bright": "#fcf9f8",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "80px",
+                    "md": "24px",
+                    "sm": "12px",
+                    "gutter": "24px",
+                    "lg": "48px",
+                    "base": "8px",
+                    "xs": "4px",
+                    "margin": "32px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-bold": ["Plus Jakarta Sans"],
+                    "display-lg": ["Be Vietnam Pro"],
+                    "headline-lg": ["Be Vietnam Pro"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["Be Vietnam Pro"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "500"}],
+                    "label-bold": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .fluid-blob {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: morph 8s ease-in-out infinite;
+        }
+        @keyframes morph {
+            0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+            50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+            100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+        }
+        .text-blue-custom { color: #22b6f4; }
+        .bg-blue-custom { background-color: #22b6f4; }
+        .text-yellow-custom { color: #fff349; }
+        .bg-yellow-custom { background-color: #fff349; }
+				
+				#logo{width:80px}
+				
+				
+				
+				@media(min-width:768px){
+				  
+					#localizaçaoEvent{
+
+					  width:300px;
+					}
+				}
+				
+								
+				
+				
+				
+				
+    </style>
+</head>
+<body class="bg-background font-body-md text-on-background antialiased overflow-x-hidden">
+
+
+<!-- TopNavBar -->
+
+<nav class="rounded-full mt-4 mx-4 md:mx-auto max-w-7xl sticky top-4 z-50 shadow-xl shadow-pink-100/50 dark:shadow-none bg-[#FDFDFD] dark:bg-slate-900 shadow-[0_10px_40px_rgba(233,64,169,0.15)]">
+<div class="flex justify-between items-center px-8 py-3 w-full bg-white/80 backdrop-blur-md rounded-full">
+
+
+<img src="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/img/logo.png" id="logo">
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-pink-400 dark:text-pink-300 font-bold font-['Be_Vietnam_Pro'] uppercase tracking-tighter hover:scale-110 hover:text-blue-400 transition-all duration-300" href="index.html">Inicio</a>
+<a class="text-pink-600 dark:text-pink-400 border-b-4 border-yellow-400 pb-1 font-['Be_Vietnam_Pro'] uppercase tracking-tighter hover:scale-110 hover:text-blue-400 transition-all duration-300" href="#">Eventos</a>
+<a class="text-pink-400 dark:text-pink-300 font-bold font-['Be_Vietnam_Pro'] uppercase tracking-tighter hover:scale-110 hover:text-blue-400 transition-all duration-300" href="https://wa.me/5511959166738" target="_blank">Contato</a>
+
+</div>
+<button class="bg-pink-500 text-white px-6 py-2 rounded-full font-bold uppercase tracking-tighter hover:scale-110 transition-all duration-300 active:scale-95"><a href="https://wa.me/5511959166738" target="_blank"> Contratar </a></button>
+</div>
+</nav>
+<main class="relative">
+<!-- Event Catering Section -->
+<section class="relative min-h-screen flex items-center py-20 px-4 md:px-xl overflow-hidden">
+<!-- Background Layer -->
+<div class="absolute inset-0 bg-[#e940a9] z-0">
+<!-- Fluid White Shapes -->
+<div class="absolute -top-20 -left-20 w-[400px] h-[400px] bg-white/10 fluid-blob blur-3xl"></div>
+<div class="absolute top-1/2 -right-40 w-[600px] h-[600px] bg-white/20 fluid-blob blur-2xl"></div>
+<div class="absolute -bottom-20 left-1/4 w-[300px] h-[300px] bg-white/10 fluid-blob blur-xl"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- Left Content: Visuals -->
+<div class="relative order-2 lg:order-1">
+<div class="relative bg-white p-4 rounded-[48px] shadow-2xl shadow-pink-900/40 rotate-[-2deg] transition-transform hover:rotate-0 duration-500">
+<img alt="" class="rounded-[36px] w-full h-[500px] object-cover" data-alt="Modern stylish milkshake cart at a vibrant outdoor garden party with colorful balloons and cheerful people in the background, bright sunny lighting" src="kombi.jpg"/>
+<!-- Floating Badge -->
+<div class="absolute -top-6 -right-6 bg-yellow-custom text-on-background px-6 py-4 rounded-full font-display-lg text-headline-md shadow-xl border-4 border-white rotate-12">
+                            RESERVE JÁ!
+                        </div>
+</div>
+<!-- Decorative Fluid Element -->
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-blue-custom/30 rounded-full blur-3xl -z-10"></div>
+</div>
+<!-- Right Content: Copy & Actions -->
+<div class="order-1 lg:order-2 space-y-8">
+<div class="space-y-4">
+<span class="inline-block bg-blue-custom text-white font-label-bold px-4 py-2 rounded-full uppercase tracking-widest">Serviços para Eventos</span>
+<h1 class="text-white font-display-lg text-display-lg leading-tight">Faça o pedido para o seu evento.</h1>
+<p class="text-pink-100 font-body-lg text-body-lg max-w-lg">
+                            Leve a explosão de doçura para a sua próxima comemoração. De casamentos a eventos corporativos, nós chegamos com o sabor!
+                        </p>
+</div>
+<ul class="space-y-6">
+<li class="flex items-center gap-4 group">
+<div class="bg-yellow-custom p-3 rounded-full group-hover:scale-110 transition-transform shadow-lg shadow-pink-900/20">
+<span class="material-symbols-outlined text-on-background font-bold" data-icon="restaurant_menu">restaurant_menu</span>
+</div>
+<span class="text-white font-headline-md text-headline-md tracking-tight">Menu personalizado</span>
+</li>
+<li class="flex items-center gap-4 group">
+<div class="bg-yellow-custom p-3 rounded-full group-hover:scale-110 transition-transform shadow-lg shadow-pink-900/20">
+<span class="material-symbols-outlined text-on-background font-bold" data-icon="badge">badge</span>
+</div>
+<span class="text-white font-headline-md text-headline-md tracking-tight">Equipe profissional</span>
+</li>
+<li class="flex items-center gap-4 group">
+<div class="bg-yellow-custom p-3 rounded-full group-hover:scale-110 transition-transform shadow-lg shadow-pink-900/20">
+<span class="material-symbols-outlined text-on-background font-bold" data-icon="cleaning_services">cleaning_services</span>
+</div>
+<span class="text-white font-headline-md text-headline-md tracking-tight">Preparação e limpeza</span>
+</li>
+</ul>
+<div class="pt-8">
+<button class="group relative bg-blue-custom hover:scale-105 transition-all duration-300 active:scale-95 px-12 py-6 rounded-full shadow-[0_20px_50px_rgba(34,182,244,0.4)] flex items-center gap-4">
+<span class="text-yellow-custom font-headline-lg text-headline-md uppercase tracking-tighter"> <a href="https://wa.me/5511959166738" target="_blank">Solicite um Orçamento</a> </span>
+<span class="material-symbols-outlined text-yellow-custom font-black text-3xl group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Wave Transition -->
+<div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+<svg class="relative block w-[calc(100%+1.3px)] h-[100px] fill-background" preserveaspectratio="none" viewbox="0 0 1200 120">
+<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C57.21,111,163.44,124.69,224,103.43c40.42-14.19,67.14-38.64,97.39-46.99Z"></path>
+</svg>
+</div>
+</section>
+<!-- Bento Grid Flavor Teaser -->
+<section class="py-xl px-4 md:px-xl max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-gutter h-auto md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 bg-pink-50 rounded-xl p-md flex flex-col justify-end relative overflow-hidden group">
+<img alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Extreme close-up of a thick strawberry milkshake with whipped cream and rainbow sprinkles, high contrast, vibrant colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0CfiV26GVWlYayQuHL73FzCgzxy_8Rrc5cRzxjXOjWAJR7EB9qRO9vOHES7Rbwdl1otpMVhKaKn3p6hwABzLZftzjaqKLAG6fgGk87-ZA9uFnK19tVL7BGbo2kQRpoPp_FdCXtPlzvtqfgD-QKkvAApySHY55D7kUaTfDLJtId-4KI3V8q86jJirme55Fv9btsCMsWMImTpZbhC9YPZ9puvFhFXpoRozwuWFuuNDxBRA4dnMXRB5nItdhJUOxzcHm3DPHJaAyytfb"/>
+<div class="absolute inset-0 bg-gradient-to-t from-pink-900/80 to-transparent"></div>
+<div class="relative z-10 text-white">
+<span class="bg-blue-custom text-white px-3 py-1 rounded-full text-label-bold">+ Pedido</span>
+<h3 class="font-headline-lg text-headline-lg mt-2">Explosão de Morango</h3>
+</div>
+</div>
+
+<div class="md:col-span-2 bg-secondary-container rounded-xl p-md flex items-center justify-between overflow-hidden group" id="localTime">
+<div class="z-10">
+<h3 class="font-headline-md text-white">Time Events</h3>
+<p class="text-white/80 font-body-md">Sabores sazonais exclusivos</p>
+</div>
+<span class="material-symbols-outlined text-white text-6xl opacity-30 group-hover:scale-125 transition-transform" data-icon="celebration">celebration</span>
+</div>
+
+<div class="bg-yellow-custom rounded-xl p-md flex flex-col justify-center items-center text-center group" id="localizaçaoEvent">
+<a href="https://www.google.com/maps/place/gagos+shake/@-23.4993958,-46.4233931,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce635ca5e6caab:0x356169267584e713!8m2!3d-23.4994007!4d-46.4208182!16s%2Fg%2F11x1lsy5qn?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><span class="material-symbols-outlined text-on-background text-5xl mb-2 group-hover:rotate-12 transition-transform" data-icon="location_on">location_on</span></a>
+<h4 class="font-headline-md text-on-background">Localização</a></h4>
+</div>
+
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-pink-50 dark:bg-slate-950 w-full rounded-t-[64px] py-12 px-8 border-t-4 border-pink-100 dark:border-pink-900">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-xl font-black text-pink-600 font-['Be_Vietnam_Pro']">Gago's Shake</div>
+<p class="text-pink-800 dark:text-pink-200 font-['Be_Vietnam_Pro'] font-medium text-center md:text-left">© 2026 Copy Right | By <a href="https://maudev.com.br">Mauricio Honorato</a></p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-pink-800 dark:text-pink-200 font-['Be_Vietnam_Pro'] font-medium hover:text-blue-500 transition-colors hover:translate-y-[-2px]" href="index.html">Inicio</a>
+<a class="text-yellow-500 font-bold font-['Be_Vietnam_Pro'] hover:text-blue-500 transition-colors hover:translate-y-[-2px]" href="https://wa.me/5511959166738" target="_blank">Reserva de Eventos</a>
+<a class="text-pink-800 dark:text-pink-200 font-['Be_Vietnam_Pro'] font-medium hover:text-blue-500 transition-colors hover:translate-y-[-2px]" href="#">Politica de Privacidade</a>
+<a class="text-pink-800 dark:text-pink-200 font-['Be_Vietnam_Pro'] font-medium hover:text-blue-500 transition-colors hover:translate-y-[-2px]" href="https://wa.me/5511959166738" target="_blank">Contato</a>
+</div>
+
+
+</div>
+</footer>
+</body></html>
