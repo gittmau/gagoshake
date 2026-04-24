@@ -7,15 +7,15 @@
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Milkshakes Cremosos e Especiais | Gagos Shake">
   <meta property="og:description" content="Saboreie os milkshakes mais cremosos e gelados da região! Diversos sabores, do clássico chocolate às criações especiais. Venha experimentar uma explosão de doçura e frescor.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/capaScreen.png"><!--Img que aparecerá no link-->
+  <meta property="og:image" content="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/img/capa.png"><!--Img que aparecerá no link-->
   <meta property="og:url" content="https://gittmau.github.io/gagoshake/"><!--link do site-->
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Milkshakes Cremosos e Especiais | Gagos Shake">
   <meta name="twitter:description" content="Saboreie os milkshakes mais cremosos e gelados da região! Diversos sabores, do clássico chocolate às criações especiais. Venha experimentar uma explosão de doçura e frescor">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/capaScreen.png"><!--img que aparecerá no twitter-->
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/img/capa.png"><!--img que aparecerá no twitter-->
   <meta name="author" content="Mauricio F. Honorato dos Santos">
-    <title>Milkshakes Cremosos e Especiais | Gagos Shake</title>
+    <title>Milkshakes Cremosos e Especiais | Gago's Shake</title>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;0,800;0,900;1,900&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -143,27 +143,31 @@
         }
 				
 				#logo{width:80px}
-				
-				@media(max-width:768px){
-				  h1,h2,h3{
-					font-size:!important;}
-				}
-				
+       
+        
+
 				
 				@media(min-width:768px){
 				 
-				 #neta{max-width:;margin:auto;}
-				 
+				 				 
 				 #taxa,#estacao{display:none}
-					
-				 #linkMauricio{color:#eab308;}	
-
-				 #linkMauricio:hover{color:#22B6F4}	
+				 
+				 #linkMauricio{
+				   color:#eab308;
+				 }
+				 
+				 #linkMauricio:hover{
+				  color:#22B6F4;}
 				}
+
+
+
 				
 				@media(min-width:1280px){
 				
 				 #taxa,#estacao{display:flex}
+
+        #boxProblema{background-color: red;width:100%;padding: 0;}
 				 
 				 #sabores{padding-top:50px}
 				
@@ -175,7 +179,9 @@
 <div id="conteudoTodo">
 <body class="bg-surface text-on-surface selection:bg-secondary/30">
 <!-- TopNavBar -->
+<!-- Troquei 'w-full' por 'w-auto' e adicionei 'box-border' por segurança -->
 <header class="bg-[#FDFDFD] dark:bg-slate-900 rounded-full mt-4 mx-4 md:mx-auto max-w-7xl sticky top-4 z-50 shadow-xl shadow-pink-100/50 dark:shadow-none flex justify-between items-center px-8 py-3 w-auto bg-white/80 backdrop-blur-md">
+
 <div class="text-3xl font-black text-pink-600 dark:text-pink-400 italic font-['Be_Vietnam_Pro'] tracking-tighter">
             <!--Gago's shake--->
 						<img src="https://raw.githubusercontent.com/gittmau/gagoshake/refs/heads/main/img/logo.png" id="logo">
@@ -186,9 +192,10 @@
 <a class="text-pink-400 dark:text-pink-300 font-bold font-['Be_Vietnam_Pro'] font-black uppercase tracking-tighter hover:scale-110 hover:text-blue-400 transition-all duration-300" href="https://wa.me/5511959166738" target="_blank">Contato</a>
 
 </nav>
-<p class="bg-[#fff349] text-[#1A1A1A] px-10 py-2 rounded-full font-bold text-sm uppercase tracking-wider hover:scale-110 active:scale-95 transition-all duration-300 shadow-md" style="border-radius:10px 5px">
-            Gago's shake
-        </p>
+<p class="bg-[#fff349] text-[#1A1A1A] px-4 md:px-10 py-2 rounded-full font-bold text-sm uppercase tracking-wider hover:scale-110 active:scale-95 transition-all duration-300 shadow-md whitespace-nowrap" style="border-radius:10px 5px">
+    Gago's shake
+</p>
+
 </header>
 <main class="relative overflow-hidden">
 <!-- Hero Section -->
@@ -203,18 +210,24 @@
 <div class="inline-block bg-[#22b6f4] text-white px-4 py-1 rounded-full text-label-bold font-label-bold">
                         O MELHOR SHAKE POP-UP
                     </div>
-<h1 class="text-display-lg font-display-lg text-secondary uppercase leading-[1] tracking-tighter">
-                        Explosão de Sabor no <br/>
-<span class="text-[#22b6f4]">Seu Evento!</span>
+
+<h1 class="text-4xl sm:text-4xl lg:text-7xl font-display-lg text-secondary uppercase leading-[1.1] tracking-tighter text-center lg:text-left w-full px-4 lg:px-0">
+    Explosão de Sabor no <br class="hidden lg:block"/>
+    <span class="text-[#22b6f4]">Seu Evento!</span>
 </h1>
+
+
+
 <p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl mx-auto lg:mx-0">
                         Transforme sua festa em um espetáculo de cores e sabores. Milkshakes artesanais, ultra cremosos e decorados com o estilo vibrante da Gago's Shake.
                     </p>
-<div class="pt-sm">
-<button class="bg-[#fff349] text-[#1A1A1A] px-xl py-md rounded-full text-headline-md font-headline-md shadow-[0_10px_0_#d5ca1c] hover:translate-y-1 hover:shadow-[0_6px_0_#d5ca1c] active:translate-y-2 active:shadow-none transition-all duration-150">
-                            <a href="https://wa.me/5511959166738" target="_blank">Quero no meu Evento</a>
-                        </button>
+<div class="pt-sm flex justify-center lg:justify-start">
+    <a href="https://wa.me/5511959166738" target="_blank" 
+       class="bg-[#fff349] text-[#1A1A1A] px-6 py-3 md:px-10 md:py-4 rounded-full text-lg md:text-xl font-bold shadow-[0_8px_0_#d5ca1c] hover:translate-y-1 hover:shadow-[0_4px_0_#d5ca1c] active:translate-y-2 active:shadow-none transition-all duration-150 block w-fit whitespace-nowrap">
+        Quero no meu Evento
+    </a>
 </div>
+
 <div class="flex items-center justify-center lg:justify-start gap-4 pt-md">
 <div class="flex -space-x-3">
 <img class="w-12 h-12 rounded-full border-4 border-white object-cover" data-alt="portrait of a smiling young woman enjoying a milkshake at a party" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBAspRqs7fVA7eQ4PhK7bKK0itPENyOv2gJThpSvfC9h3f7ejq7O3sgy17eflZIry1dHVMCGV4uyLeF_pQNTEuaiLYOh_5ZVSQCPG4Cxcd05CNJYCwTR3AvtT3nBAIZyOPcFa04-XwhOJSUgsIj807UEsHneFHjB4ahjU-lbiERcl-V2yIvfgGsCNQzXd00xW8c-lZTcdK0IEdkKWsN47Qq5-Ru9yQPufe8oA3WeUShNIx8zabu77HDRGd8aWk_UZblTTFEERQR7n1"/>
@@ -262,7 +275,10 @@
 
 <div class="flex-1 space-y-sm relative z-10">
 <span class="text-[#22b6f4] font-label-bold uppercase tracking-widest">O Clássico</span>
-<h3 class="text-headline-lg font-headline-lg text-secondary">Novo Sabor</h3>
+<h3 class="text-2xl md:text-headline-lg font-headline-lg text-secondary whitespace-nowrap">
+    Novo Sabor
+</h3>
+
 <p class="text-body-md font-body-md text-on-surface-variant">O que era bom ficou ainda melhor! Chegou o novo sabor [Moda da casa]: carregado de adicionais, com aquele sabor irresistível que vai ser o hit da sua próxima festa. Quem prova, pede bis!"</p>
 <button class="flex items-center gap-base text-secondary font-bold hover:gap-md transition-all">
                                 Monte o seu com até 2 sabores<span class="material-symbols-outlined">arrow_forward</span>
@@ -283,7 +299,7 @@
 <p class="text-label-bold font-label-bold uppercase">Taxa de Sorrisos</p>
 </div>
 <!-- Event Card -->
-<div class="bg-[#22b6f4] p-lg rounded-xl text-white relative overflow-hidden group" id="estacao">
+<div class="bg-[#22b6f4] p-lg rounded-xl text-white relative overflow-hidden group" > <!---box azul--->
 <div class="space-y-sm relative z-10" >
 <h4 class="text-headline-md font-headline-md italic uppercase">Casamentos &amp; Festas</h4>
 <p class="text-body-md font-body-md opacity-90">Nossa estação móvel de shakes é a atração principal que faltava no seu evento corporativo ou social.</p>
@@ -328,7 +344,9 @@
 </header>
 
 <!-- Carousel Component -->
-<div class="relative group max-w-full px-4">
+
+<div class="relative group max-w-full overflow-hidden">
+
   
   <!-- Botão Prev -->
   <button onclick="document.getElementById('carousel').scrollBy({left: -400, behavior: 'smooth'})" 
